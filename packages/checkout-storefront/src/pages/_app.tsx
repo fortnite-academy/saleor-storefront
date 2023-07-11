@@ -20,7 +20,7 @@ const checkoutApiUrl = process.env["NEXT_PUBLIC_CHECKOUT_APP_URL"]
   ? urlJoin(process.env["NEXT_PUBLIC_CHECKOUT_APP_URL"], `api`)
   : "";
 const checkoutAppUrl = process.env["NEXT_PUBLIC_CHECKOUT_APP_URL"];
-const allowedSaleorApiRegex = '^https:\/\/[a-z0-9\-\.]+\.saleor\.cloud\/graphql\/\\$';
+const allowedSaleorApiRegex = '^https:\/\/[a-z0-9\-\.]+\.saleor\.cloud\/graphql\/\$';
 
 export default function CheckoutSpa() {
   if (!checkoutApiUrl) {

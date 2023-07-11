@@ -8,7 +8,8 @@ const checkoutApiUrl =
     : "";
 const checkoutAppUrl = process.env["REACT_APP_CHECKOUT_APP_URL"];
 
-const allowedSaleorApiRegex = '^https:\/\/[a-z0-9\-\.]+\.saleor\.cloud\/graphql\/\\$';
+const allowedSaleorApiRegex = '^https:\/\/[a-z0-9\-\.]+\.saleor\.cloud\/graphql\/\$';
+
 
 export function App() {
   invariant(checkoutApiUrl, `Missing REACT_APP_CHECKOUT_APP_URL!`);
