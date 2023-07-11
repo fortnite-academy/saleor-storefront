@@ -25,7 +25,7 @@ export default function CheckoutSpa() {
   }
 
   const checkoutAppUrl = urlJoin(window.location.origin, "saleor-app-checkout", "/");
-  const allowedSaleorApiRegex = process.env.NEXT_PUBLIC_ALLOWED_SALEOR_API_REGEX;
+  const allowedSaleorApiRegex = '^https:\/\/[a-z0-9\-\.]+\.saleor\.cloud\/graphql\/\\$';
   invariant(allowedSaleorApiRegex, `Missing NEXT_PUBLIC_ALLOWED_SALEOR_API_REGEX`);
 
   return (
